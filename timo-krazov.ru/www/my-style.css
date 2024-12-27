@@ -1,0 +1,175 @@
+body {    /* Описание параметров содержания */ 
+    background-color: #FFFFFF;  /* Цвет основного фона */ 
+    color: black;   /* Цвет текста */ 
+    margin: 10px;   /* Отступы */ 
+} 
+   /*-------------------------------------------------------------------------------------------------*/ 
+    
+#container {   /* Слой, который служит каркасом и включает в себя все остальные слои */ 
+    width: 950px;   /* Ширина слоя */ 
+    margin-right: auto;  /* Отступ справа */ 
+    margin-left: auto;   /* Отступ слева */ 
+    background-color: white;  /* Цвет фона */ 
+} 
+   /*-------------------------------------------------------------------------------------------------*/ 
+    
+#top {    /* Слой шапки сайта */ 
+    text-align: center;   /* Выравнивание по центру */ 
+    width: 950px;   /* Ширина слоя */ 
+    background: #FFFFFF;   /* Цвет фона */ 
+}  
+   /*-------------------------------------------------------------------------------------------------*/ 
+    
+#other {   /* Вспомогательный слой */ 
+    font-weight: bold; 
+    padding: 5px;   /* Поля вокруг надписи */ 
+    width: 100%;   /* Ширина слоя */ 
+    background: #000066;  /* Цвет фона */ 
+    height: 20px;   /* Высота слоя */ 
+    border: 7px solid #000066; 
+}  
+#daydata { 
+    position: relative;   /* Относительное позиционирование */ 
+    float: left;    /* Совмещение колонок по горизонтали */ 
+    text-align: left; 
+    width: 300px;   /* Ширина слоя */ 
+    color: #FFFF00; 
+} 
+#hello { 
+    width: 626px; 
+    color: white; 
+    position: relative;   /* Относительное позиционирование */ 
+    float: left;   /* Совмещение колонок по горизонтали */ 
+    text-align: right; 
+} 
+#other A.exitlink { 
+    color: #00FFFF;
+    text-decoration: none; /* Убираем подчеркивание у ссылок */ 
+    font-weight: bold; 
+} 
+#other A.exitlink:hover { 
+    color: #FFFF00; 
+} 
+   /*-------------------------------------------------------------------------------------------------*/ 
+    
+#menu {    /* Меню */ 
+    position: relative;   /* Относительное позиционирование */ 
+    float: left;   /* Совмещение колонок по горизонтали */      
+    width: 200px;  /* Ширина меню */ 
+    margin: 0;    /* Обнуляем значения отступов */ 
+} 
+    #menu A { 
+    display: block;   /* Ссылка как блочный элемент */ 
+    width: 176px;   /* Ссылка на всю ширину меню */ 
+    padding: 5px;   /* Поля вокруг надписи */ 
+    border-left: 7px solid #000066; /* Линия слева */ 
+    border-right: 7px solid #000066; /* Линия справа */ 
+    border-bottom: 1px solid silver; /* Линия между пунктами */ 
+    background: #000066;   /* Исходный цвет фона */ 
+    color: white;   /* Исходный цвет текста */ 
+    text-decoration: none  /* Убираем подчеркивание у ссылок */ 
+} 
+    
+#menu A:hover { 
+    border-left-color: #FFFF00;  /* Меняем цвет линии слева */ 
+    border-right-color: #FFFF00; /* Меняем цвет линии справа */ 
+    color: #FFFF00; 
+} 
+   /*-------------------------------------------------------------------------------------------------*/ 
+    
+#content {   /* Основное содержание */ 
+    position: relative;   /* Относительное позиционирование */ 
+    float: left;    /* Совмещение колонок по горизонтали */ 
+    width: 750px;   /* Ширина слоя */ 
+    background: #F0F0F0;   /* Цвет фона */ 
+    color: black;   /* Цвет текста */ 
+} 
+#content P {   /* Свойства параграфа в слое контента */ 
+    padding: 2px 20px;   /* Поля вокруг текста */ 
+    margin-bottom: 7px;   /* Отступ снизу */ 
+    margin-top: 0px;   /* Отступ сверху */ 
+} 
+#content H1 { 
+    padding: 2px;   /* Поля вокруг текста */ 
+    text-align: center; 
+    font-size: 150%; 
+    color: #000066; 
+} 
+.centr {   /* Параграф по середине слоя */ 
+    text-align: center; 
+} 
+.error {   /* Ошибка */ 
+    text-align: center; 
+    color: #FF0000; 
+    font-weight: bold; 
+} 
+   /*-----------------------Таблицы------------------------------------------------------------------*/ 
+    
+.tbl {    /* Класс для таблиц */ 
+    width: 80%;   /* Ширина таблицы в процентах */ 
+    border: 2px solid #000066; /* Рамка вокруг таблицы */ 
+    text-align: center; 
+} 
+.tbl tr:hover {  /* Вид строки при наведении на нее мышкой */ 
+    background: #FFFF00; 
+} 
+.tbl tr.header {  /* Стиль заголовка */ 
+    background: #f0f0f0;  /* Цвет фона заголовка */ 
+    color: #000066;          /* Цвет текста в заголовке */ 
+} 
+.tbl tr.header:hover { 
+    background: #f0f0f0;
+} 
+.tbl td { 
+    padding: 4px;  /* Поля вокруг содержимого ячеек */ 
+    border: 1px solid silver; /* Линия между пунктами */ 
+} 
+#footer {   
+    position: relative;   
+    clear: left;   
+    width: 950px;   
+    margin-right: auto;   
+    margin-left: auto;   
+    /* Заключительный слой */ 
+    /* Относительное позиционирование */ 
+    /* Отмена обтекания слева */ 
+    /* Ширина слоя */ 
+    /* Отступ справа */ 
+    /* Отступ слева */ 
+    background-color: #000066; /* Цвет фона */ 
+    color: white; 
+    font-size: 80%; 
+} 
+#footer P { 
+    padding: 5px 10px;  
+    /* Поля вокруг текста */ 
+    margin-bottom: 7px;  /* Отступ снизу */ 
+    margin-top: 0px;  
+    /* Отступ сверху */ 
+} 
+ 
+#footer A { 
+    font-weight: bold; 
+    color: #FFFF00;  
+    text-decoration: none; 
+    }
+#footer A:hover { 
+    color: white;   
+    /* Исходный цвет текста */ 
+    /* Убираем подчеркивание у ссылок */ 
+    /* Новый цвет ссылки */ 
+} 
+button {
+    margin-left: 50px;
+}
+#req5 {
+    margin-left: 50px;
+}
+@media print {
+    button {
+        display: none; /* Скрыть все кнопки */
+    }
+    a {
+        display: none;
+    }
+}
